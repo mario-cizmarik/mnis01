@@ -17,3 +17,5 @@
    * bla
    * bla
    * bla
+   * dalsia zmena
+   * a este dalsia zmena
