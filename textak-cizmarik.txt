@@ -1,0 +1,85 @@
+|		|	stage	|		|
+
+git init
+git add <file.prip> //git add . //pridat vsetky subory ktore boli menene
+git status
+git commit -m "vytvoreny prvy subor projektu"
+
+git remote add origin https://github.com/mario-cizmarik/bla.git
+git remote -v
+
+git push -u origin master
+
+
+//nastavenie spravnej cesty
+cd /c/xampp/htdocs
+
+//”osvojenie si projektu” – forknutie – naklonovanie a dotvaranie svojej verzie
+git clone https://github.com/mario-cizmarik/mnis01.git
+
+//uprava suboru napr
+brackets README.md
+
+//zobrazenie suborov, cervenym - ktore boli menene. zelenym - ktore boli menene a po prikaze git add .
+git status
+
+//pre vsetky subory
+git add .
+
+git status
+
+//commit - zaznamenanie zmeny
+git commit -m "toto je popis zmeny suboru-ov"
+
+//zobrazenie historie
+git log
+
+//nahrame projekt, -u aby sme sa nemuseli zakazdym prihlasovat, origin master povodna vetva, MASTER je nazov vetvy
+git push -u origin master
+
+// som v branchi = vo vetve--status?
+Git branch
+
+//vytvorim branch = vetva = akoby workspace, verzie (mozeme mat viac vetiev, forknutu vetvu dame do dev vetvy a ked sa dev vetva otestuje tak sa moze dat do master vetvy ktora sa moze nahrat na produkciu)
+ Git branch mnis01
+
+//prepneme sa do vetvy mnis01
+git checkout mnis01
+
+// znova zopakujem: zmenim readme.md, addnem, commitnem.
+// ak pouzijem git commit -m "..", tak mozem vynechat riadok pred tym – git add .
+
+//prepnem sa do vetvy master
+Git checkout master
+
+//git merge zoberie mnis01 a prilepi to do master
+Git merge mnis01
+
+//ak potrebujeme vymazat vetvu, tak napisem
+Git branch –d mnis01
+
+
+//ULOHA K PREDMETU
+
+Cd \c\xampp\htdocs\projekt_mnis
+
+Git init
+
+//na githube si vytvorime repozitar
+
+//ak uz mame vytvoreny project na localhoste, tak pojdeme podla postupu v githube: ...or push an existing repository from the command line
+
+//treba branchovat, commitovat, pushovat
+
+//ak je konflikt s local / github (rozlicne subory), tak mozeme v krajnej situacii pouzit git rebase
+
+git remote add origin https://github.com/mario-cizmarik/projekt_mnis.git
+
+git add .
+
+git push -u origin master
+
+
+
+// git pull == git fetch + git push
+//spoji nam subory na locale a na vzdialenom - githube
