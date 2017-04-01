@@ -1,0 +1,16 @@
+body {
+    background-color: #fff;
+    color: #000;
+}
+h1, h2, h3, h4 {
+    font-size: 20px;
+    color: cadetblue;
+}
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 50px #ccc;
+    padding: 30px 50px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
